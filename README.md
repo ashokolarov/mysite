@@ -8,9 +8,6 @@ A clean, minimal personal website built with Next.js featuring a blog with markd
 - **Blog Posts** - Write posts in Markdown with YAML frontmatter for metadata
 - **Mathematical Formulas** - Full KaTeX support for inline and display math equations
 - **Category Filtering** - Filter blog posts by tags/topics
-- **Responsive Design** - Beautiful on all screen sizes
-- **Fast & Static** - Pre-rendered static HTML for optimal performance
-- **Dark Mode Ready** - Clean, minimal aesthetic that works everywhere
 
 ## Getting Started
 
@@ -134,33 +131,6 @@ npm start
 ```
 
 The site is pre-rendered as static HTML for maximum performance and can be deployed to any static hosting service (Vercel, Netlify, GitHub Pages, etc.).
-
-## Deployment
-
-### Vercel (Recommended)
-
-```bash
-npm i -g vercel
-vercel
-```
-
-### Other Platforms
-
-The built output in `.next/out` contains static HTML and can be deployed to any static hosting:
-
-- GitHub Pages
-- Netlify
-- AWS S3 + CloudFront
-- Any web server
-
-## Dependencies
-
-- **Next.js** - React framework
-- **gray-matter** - Parse YAML frontmatter from markdown
-- **remark** - Markdown processor
-- **rehype-katex** - Render LaTeX math
-- **KaTeX** - Mathematical typesetting
-- **Tailwind CSS** - Styling
 
 ## License
 
