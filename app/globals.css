@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+    font-family: 'Figtree', sans-serif;
+}
+
+/* KaTeX math support */
+.math {
+    font-family: 'KaTeX_Main', serif;
+    display: inline;
+}
+
+.math.display {
+    display: block;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+/* Blog content styling */
+article {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    font-family: 'Figtree', sans-serif;
+}
+
+article h1,
+article h2,
+article h3 {
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-family: 'Figtree', sans-serif;
+    color: #000;
+}
+
+article h1 {
+    font-size: 1.75rem;
+}
+
+article h2 {
+    font-size: 1.35rem;
+}
+
+article h3 {
+    font-size: 1.15rem;
+}
+
+article p {
+    margin-bottom: 1rem;
+}
+
+article ul,
+article ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+article ul {
+    list-style-type: disc;
+}
+
+article ol {
+    list-style-type: decimal;
+}
+
+article li {
+    margin-bottom: 0.5rem;
+}
+
+article code {
+    background-color: #f3f4f6;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: 'Monaco', 'Menlo', monospace;
+    font-size: 0.9em;
+}
+
+article pre {
+    background-color: #1f2937;
+    color: #f3f4f6;
+    padding: 1rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+}
+
+article pre code {
+    background-color: transparent;
+    color: inherit;
+    padding: 0;
+}
+
+article blockquote {
+    border-left: 4px solid #ddd;
+    padding-left: 1rem;
+    margin-left: 0;
+    margin-bottom: 1rem;
+    color: #666;
+    font-style: italic;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    margin: 1.5rem 0;
+    border-radius: 6px;
+}
+
+article a {
+    color: #6b7280;
+    transition: color 0.2s;
+}
+
+article a:hover {
+    color: #374151;
+}
+
+/* KaTeX specific */
+.katex-display {
+    margin: 1.5rem 0;
+}
