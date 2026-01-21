@@ -8,18 +8,26 @@ tags: ["Probability & Statistics"]
 One of the most elegant results in probability theory is how the Binomial distribution converges to the Poisson distribution under the right conditions. Conceptually and mathematically, it explains why the Poisson process is the “right” model for random arrivals. But what does this relationship tell us and could we derive an intuition behind it?
 
 ## The Bernoulli Process
-Imagine time broken into many tiny pieces: seconds, milliseconds, or even smaller. In each small interval, an event might happen. A radioactive atom decays, a customer walks into a store, or a trade arrives at an exchange. From on outside perspective, each interval looks the same:
+Imagine time broken into many tiny pieces: seconds, milliseconds, or even smaller. In each small interval, an event might happen. A radioactive atom decays, a customer walks into a store, or a large market order arrives at an exchange. From on outside perspective, each interval looks the same:
 
-- The event either happens or it doesn’t
-- The probability is small
-- What happens in one interval doesn’t affect the others
+- The event either happens or it does not
+- The probability of the event occurring is small
+- What happens in one interval does not affect the others
 
 This is nothing more than a **Bernoulli trial**. If we look at $n$ such intervals and count how many events occur, the total number of events follows a Binomial distribution:
 $$
 P(X=k)=\binom{n}{k}p^{k}(1−p)^{n−k} \tag{1}
 $$
 
-Intuitively, if we flip $n$ coins each with bias $p$, Equation 1 gives the probability of $k$ successes. 
+Intuitively, if we flip $n$ coins each with bias $p$, Equation 1 gives the probability of $k$ successes. But we can also ask a different, equally natural question: **How long do we have to wait until the next event occurs**?
+
+In discrete time, waiting means counting how many intervals pass before the first success. Since each interval is an independent Bernoulli trial with success probability $p$, the waiting time $T$ follows a geometric distribution:
+
+$$
+P(T=k) = (1-p)^{k-1}p, k=1,2,...
+$$
+
+This formula reflects the structure of the process: the event fails to occur for $k-1$ consecutive intervals and then happens in the $k$-th interval. Crucially, the probability of success in the next interval does not depend on how long we have already waited. In probability theory, this property is known as **memorylessness**.
 
 So far, everything is discrete, simple, and intuitive.
 
