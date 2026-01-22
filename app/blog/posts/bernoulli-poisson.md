@@ -24,7 +24,7 @@ Intuitively, if we flip $n$ coins each with bias $p$, Equation 1 gives the proba
 In discrete time, waiting means counting how many intervals pass before the first success. Since each interval is an independent Bernoulli trial with success probability $p$, the waiting time $T$ follows a geometric distribution:
 
 $$
-P(T=k) = (1-p)^{k-1}p, k=1,2,...
+P(T=k) = (1-p)^{k-1}p, \quad  k=1,2,\ldots
 $$
 
 This formula reflects the structure of the process: the event fails to occur for $k-1$ consecutive intervals and then happens in the $k$-th interval. Crucially, the probability of success in the next interval does not depend on how long we have already waited. In probability theory, this property is known as **memorylessness**.
