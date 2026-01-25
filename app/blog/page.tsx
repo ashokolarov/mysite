@@ -3,7 +3,7 @@ import { getAllPosts, getAllTags } from '@/app/lib/blog';
 
 export const metadata = {
     title: 'Blog | Aleksandar Shokolarov',
-    description: 'Thoughts on machine learning, mathematicsm, finance and other.',
+    description: 'Thoughts on topics I find interesting.',
 };
 
 export default async function BlogPage() {

@@ -6,7 +6,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
     title: 'Aleksandar Shokolarov',
-    description: 'Thoughts on topics I find interesting',
+    description: 'Thoughts on topics I find interesting.',
 };
 
 export default function RootLayout({
@@ -27,7 +27,7 @@ export default function RootLayout({
                 />
             </head>
             <head>
-                <link rel="icon" href="/favicon.png?v=2" />
+                <link rel="icon" href="/favicon.ico?v=2" />
             </head>
             <body>
                 <Navigation />
