@@ -2,7 +2,7 @@
 title: "The Bernoulli-Poisson Relationship"
 date: "2026-01-16"
 summary: "I build intuition on how the Poisson distribution arises naturally by viewing it as the limit of many rare, independent Bernoulli events as time is divided more and more finely."
-tags: ["Probability & Statistics"]
+tags: ["Probability & Statistics", "Stochastic Processes"]
 ---
 
 One of the most elegant results in probability theory is how the Binomial distribution converges to the Poisson distribution under the right conditions. Conceptually and mathematically, it explains why the Poisson process is the “right” model for random arrivals. But what does this relationship tell us and could we derive an intuition behind it?
