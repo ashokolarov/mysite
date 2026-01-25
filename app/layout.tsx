@@ -1,11 +1,12 @@
-import type { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/next';
+import type { Metadata } from 'next';
 import Navigation from './components/Navigation';
 import './globals.css';
 
+
 export const metadata: Metadata = {
     title: 'Aleksandar Shokolarov',
-    description: 'Personal blog and thoughts on topics I find interesting',
+    description: 'Thoughts on topics I find interesting',
 };
 
 export default function RootLayout({
@@ -24,6 +25,9 @@ export default function RootLayout({
                     href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap"
                     rel="stylesheet"
                 />
+            </head>
+            <head>
+                <link rel="icon" href="/favicon.png?v=2" />
             </head>
             <body>
                 <Navigation />
