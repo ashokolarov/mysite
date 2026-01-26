@@ -27,7 +27,7 @@ export default function RootLayout({
                 />
             </head>
             <head>
-                <link rel="icon" href="/favicon.ico?v=2" />
+                <link rel="icon" href="/favicon.png?v=2" />
             </head>
             <body>
                 <Navigation />
